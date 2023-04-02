@@ -16,9 +16,11 @@ import { textAlign } from '@mui/system'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+const apiKey = process.env.FIREBASE_CONFIG_API_KEY;
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBgZlkcRsqnlyacjsDNigD__CFvXGtgNIM",
+  apiKey: apiKey,
   authDomain: "switch-bot-thero.firebaseapp.com",
   projectId: "switch-bot-thero",
   storageBucket: "switch-bot-thero.appspot.com",
