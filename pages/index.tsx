@@ -7,7 +7,7 @@ import axios from 'axios';
 import { Grid, Typography, Stack, Container, Icon} from '@mui/material'
 import ThermostatIcon from '@mui/icons-material/Thermostat';
 import OpacityIcon from '@mui/icons-material/Opacity';
-import {red, blue} from '@mui/material/colors';
+import {red, blue, grey} from '@mui/material/colors';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -77,7 +77,7 @@ export default function Home() {
       <main className={styles.main}>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
         <Stack spacing={2} sx={{width: '100%'}}>
-          <Typography variant="h5" component="h5" color={red[50]} sx={{ mb: 2 }} align="center">
+          <Typography variant="h5" component="h5" color={grey[500]} sx={{ mb: 2 }} align="center">
             A621 温湿度計
           </Typography>
           <Typography variant="h5" component="h5" color={red[500]} textAlign="center">
